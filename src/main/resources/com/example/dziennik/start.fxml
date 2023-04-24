@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #edfcfc;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dziennik.LogIn">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="335.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="32.0" layoutY="155.0" text="Username" textFill="#0090ff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="211.0" text="Password" textFill="#0090ff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="146.0" layoutY="158.0" promptText="Username" />
+            <PasswordField fx:id="password" layoutX="146.0" layoutY="214.0" promptText="Password" />
+            <Button fx:id="button" layoutX="130.0" layoutY="298.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: #0090ff;" text="Log In" />
+            <Label fx:id="wrongLogIn" layoutX="153.0" layoutY="127.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
